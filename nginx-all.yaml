@@ -35,6 +35,7 @@ spec:
       - name: netbox-static-files
         persistentVolumeClaim:
           claimName: netbox-static-files-pvc-prod
+          readonly: true
 ---
 apiVersion: v1
 kind: Service
